@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Formulario</title>       
+  
+    <link href="https://fonts.googleapis.com/css?family=Prompt:200,300,400,500" rel="stylesheet">
+    <link rel="stylesheet"  href="assets/css/main.css">
+  </head>
+  <body>
+  <center>
+
+    <section class="form-container">
+
+      <div class="container-hijo">
+        <form class="form-formulario" action="" method="get" onSubmit="return validateForm(this.form)" >
+          <h2 id="nombre-formulario">
+            INGRESE DATOS PERSONALES
+          </h2>
+
+          <div class="name-container box ">
+            <label for="nameApellido" class="sr-only">Nombre y apellido</label>
+            <input type="text" id="name" class="form-cuadro"
+            placeholder="nombre y apellido" onKeydown="checkInput(event)" onkeyUp="validaName()" autofocus=""  name="n">
+            <div id="salida_name"></div>
+          </div>
+
+          <div class="edad-container box">
+               <label for="edadEs" class="sr-only">Edad es:</label>
+               Fecha nacimiento: <input type="date" name="cumpleanios" class="form-cuadro" step="1" min="1993-01-01" max="2017-12-31"  onkeyUp="validaEdad()">
+         </div>
+
+          <div class="dni-container box">
+            <label for="Numdni" class="sr-only"s>Numero de Dni</label>
+            <input type="text" id="input-dni" class="form-cuadro " placeholder="Ingrese dni"   onkeyUp="validaDni()" >
+            <div id="salida_dni"></div>
+          </div>
+
+          <div class="celular-container box">
+            <label for="inputCelular" class="sr-only">Numero de Celular</label>
+            <input type="text" id="input-celular" class="form-cuadro" placeholder="Ingrese celular"  onkeyUp="validaCelular()">
+            <div for="" id="salida_celular" ></div>
+          </div>
+
+          <div class="contraseña-container box">
+            <label for="inputPassword" class="sr-only">
+              Contraseña
+            </label>
+            <input type="password" id="input-password" class="form-cuadro" placeholder="Ingrese su contraseña"  onkeyUp="validaPass()" >
+             <div for="" id="salida_pass" ></div>
+          </div>
+
+          <div class="contraseña box" >
+            <label for="inputPassword" class="sr-only">
+              Confirmar contraseña
+            </label>
+            <input type="password" id="input-password" class="form-cuadro" placeholder="Ingrese su contraseña"  onkeyUp="confirmarPass()" >
+             <div for="" id="salida_confcontraseña" ></div>
+          </div>
+          
+
+          <div class="input-comentario box">
+            <label for="inputComentario" class="sr-only">
+            </label>comentarios
+            <textarea name="" id="comentario" cols="30" rows="10" class="form-cuadro" placeholder="Ingrese su comentario"  onkeyUp="confirmarComentario()"></textarea>
+          </div>
+
+        
+          <div class="checkbox-condiciones">
+            <label>
+              <input type="checkbox" value="remember-me" >
+              <span>Terminos y Condiciones</span>
+            </label>
+          </div>
+
+          <div id="salida"></div>
+          <button class=" submit-btn" type="submit">Registrar</button>
+          <div id="salida_enviar"></div>
+        </form>
+      </div>  
+    </section>
+
+      <script  src="assets/js/codigo.js"></script>
+    </center>
+  </body>
+</html>
+<!DOCTYPE html>
+
+
+
+

@@ -1,0 +1,55 @@
+*{
+  font-family: 'Prompt', sans-serif;
+
+}
+.form{
+  height: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: block;
+  position: relative;
+}
+
+.form-container:break{
+  content: "";
+  
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute;
+  opacity: 0.8;}
+ 
+.form-formulario {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-formulario .nombre-formulario,
+.form-formulario .checkbox-condiciones, .form-formulario .box{
+  margin-bottom: 10px;
+}
+
+.form-formulario .checkbox {
+  font-weight: normal;
+}
+
+.form-formulario .form-cuadro{
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+   
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+
+ .submit-btn{
+  background-color: pink;
+  border-color: pink;
+  padding: 10px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+#salida_pass{color: red; }
